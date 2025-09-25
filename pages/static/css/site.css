@@ -1,0 +1,56 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background: #f7f7f9;
+  color: #111827;
+}
+
+/* Header + Navbar */
+header {
+  background: #1e293b;   /* dark header */
+  padding: 12px 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav ul li a:hover {
+  color: #0d0def; /* hover effect */
+}
+
+/* Main content */
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+/* Footer */
+footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 12px 20px;
+  margin-top: 30px;
+}
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
