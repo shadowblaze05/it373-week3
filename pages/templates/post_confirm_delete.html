@@ -4,6 +4,6 @@
 <h1>Delete Post: {{ post.title}}</h1>
 <form method="post">
     {% csrf_token %}
-    <button type="submit" onclick="return Confirm(Are you sure about that?!)">Confirm Delete</button>
+    <button type="submit" onclick="return confirm('Are you sure about that?!')">Confirm Delete</button>
 </form>
 {% endblock content%}
