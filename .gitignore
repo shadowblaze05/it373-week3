@@ -1,15 +1,16 @@
-#Python
---pycache__/
+# Python
+__pycache__/
 *.py[cod]
 *.sqlite3
-#virtual environment
+
+# Virtual env
 .venv/
 
-#django
+# Django
 staticfiles/
 media/
 
- OS
+# OS
 .DS_Store
 
 # Environment
