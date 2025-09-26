@@ -13,7 +13,9 @@
         <a href="{% url 'about' %}">About</a> |
         <a href="{% url 'gallery' %}">Gallery</a> |
         <a href="{% url 'post_list' %}">Posts</a>  |
-        <a href="{% url 'admin' %}">Admin</a>
+        <a href="{% url 'post_create' %}">Create</a>  |
+        <a href="{% url 'admin' %}">Admin</a> 
+
     </nav>
     <main>
         {% block content %}{% endblock %}

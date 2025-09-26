@@ -2,23 +2,15 @@
 {% block title %}{{ title }}{% endblock %}
 {% block content %}
  <h1>Posts ({{ posts.count }})</h1>
+
+ <ul>
  {% for post in posts %}
-    <article>
-        <h3>{{ post.title }}</h3>
-        <span><small>Posted on {{ post.created_at|timesince }} ago.</small></span>
-        <p>{{ post.body }}</p>
-        <h4>Comments ({{ post.comments.count }})</h4>
-        <ul>
-            {% for comment in post.comments.all %}
-               <li><strong>{{ comment.author }}:</strong> {{ comment.text }} | {{ comment.created_at|timesince}} ago.</li>
-            {% empty %}
-               <li>No comment yet.</li>
-            {% endfor %}
-        </ul>
-        
+    <li>
+        <a href="{% url 'post_view' post.pk %}">{{ post.title }}</a>
+    </li>
     </article>
-    <hr>
  {% empty %}
     <p>No post yet.</p>
  {% endfor %}
+</ul>
 {% endblock %}
