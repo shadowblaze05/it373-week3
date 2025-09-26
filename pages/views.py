@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from pages.models import Post
+from django.shortcuts import redirect
 
 # Create your views here.
 def home(request):
@@ -31,3 +32,6 @@ def post_list(request):
         'title': 'Posts',
     }
     return render(request, 'post_list.html', context)
+
+def admin(request):
+    return redirect('/admin/')

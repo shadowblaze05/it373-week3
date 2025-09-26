@@ -7,4 +7,5 @@ urlpatterns = [
     path('hello/<str:name>/', views.hello, name='hello'),
     path('gallery/', views.gallery, name='gallery'),
     path('posts/', views.post_list, name='post_list'),
+    path('admin/', views.admin, name='admin'),
 ]
